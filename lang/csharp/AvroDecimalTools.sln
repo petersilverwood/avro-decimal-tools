@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C5E39099-F2F4-407E-A862-0E71D737091F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DE8654DD-5CF4-451B-806A-C17E3E157F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalToolTests", "test\DecimalToolTests\DecimalToolTests.csproj", "{A417AE05-D638-48B7-954D-8614B49A5E91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalTools", "src\DecimalTools\DecimalTools.csproj", "{84D2B0D3-DFE0-4EB1-B1B3-3B0CD83AB99C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A417AE05-D638-48B7-954D-8614B49A5E91} = {DE8654DD-5CF4-451B-806A-C17E3E157F02}
+		{84D2B0D3-DFE0-4EB1-B1B3-3B0CD83AB99C} = {C5E39099-F2F4-407E-A862-0E71D737091F}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A417AE05-D638-48B7-954D-8614B49A5E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A417AE05-D638-48B7-954D-8614B49A5E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A417AE05-D638-48B7-954D-8614B49A5E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A417AE05-D638-48B7-954D-8614B49A5E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D2B0D3-DFE0-4EB1-B1B3-3B0CD83AB99C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D2B0D3-DFE0-4EB1-B1B3-3B0CD83AB99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D2B0D3-DFE0-4EB1-B1B3-3B0CD83AB99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D2B0D3-DFE0-4EB1-B1B3-3B0CD83AB99C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
