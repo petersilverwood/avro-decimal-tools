@@ -16,10 +16,17 @@ namespace DecimalTools
     /// </summary>
     public class DecimalConversion
     {
-        public static byte[] ConvertDecimalToBytes(decimal logicalValue)
+        public static byte[] ConvertDecimalToBytes(decimal logicalValue, int scale)
         {
             var val = (decimal)logicalValue;
             int[] valBits = decimal.GetBits(val);
+            
+            
+            int valueScale = (int)((valBits[3] & ~Int32.MinValue) >> 16);
+            if (valueScale != scale)
+            {
+                throw new Exception("The scale of logicalValue and the specified scale do not match");
+            }
             
             // We copy the decimal bytes into a little-endian byte[] buffer
             // This is padded with a 0 byte in the MSB, so that BigInteger interprets as an unsigned int
